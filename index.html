@@ -11,7 +11,7 @@
     <div class="container">
       <header class="header">
         <h1 id="title">
-          This Survey
+          🙌🏽 This Survey 🖖🏽
         </h1>
         <p id="description">
           Is a Survey About Taking Surveys
@@ -19,7 +19,7 @@
       </header>
       <main class="survey">
         <form class="form" id="survey-form" method="GET" action="#">
-          <label for="email" class="labels" id="email-label">Your Email</label>
+          <label for="email" class="labels" id="email-label"> 📧 Your Email</label>
           <input
             type="email"
             name="email"
@@ -28,7 +28,7 @@
             placeholder="  Please enter your email"
             required
           />
-          <label for="name" class="labels" id="name-label">Your Name: </label>
+          <label for="name" class="labels" id="name-label"> ✒️ Your Name: </label>
           <input
             type="text"
             name="name"
@@ -37,7 +37,7 @@
             placeholder="  Please enter your name"
             required
           />
-          <label for="age" class="labels" id="number-label">Your age: </label>
+          <label for="age" class="labels" id="number-label"> 🍺 Your age: </label>
           <input
             type="number"
             name="age"
@@ -50,7 +50,7 @@
             required
           />
           <div>
-            <label for="gender" class="labels" id="gender-label">Your Gender: </label>
+            <label for="gender" class="labels" id="gender-label"> ❤️ Your Gender: </label>
             <select name="gender" id="dropdown">
               <option disabled value>Select One</option>
               <option value="intersex">Intersex</option>
@@ -60,34 +60,97 @@
             </select>
           </div>
           <!-- Survey Questions -->
-          <div>
+          <div class="radio">
             <h2 class="labels">Do you like taking Surveys?</h2>
-
-            <ul>
-              <li>
-                <input type="radio" name="yesno" class="radio-input" id="yes" checked />
+            <ul class="radio-ul">
+              <li class="radio-li">
+                <input
+                  type="radio"
+                  value="1"
+                  name="radio-buttons"
+                  class="radio-input"
+                  id="yes"
+                  checked
+                />
                 <label for="yes" class="radio-label"
                   >Yes
                   <span class="custom_radio-button"></span>
                 </label>
-
-                <div class="check"></div>
               </li>
-
               <li>
-                <input type="radio" name="yesno" class="radio-input" id="no" />
+                <input type="radio" value="1" name="radio-buttons" class="radio-input" id="no" />
                 <label for="no" class="radio-label"
                   >No
                   <span class="custom_radio-button"></span>
                 </label>
-
-                <div class="check"></div>
               </li>
             </ul>
           </div>
+          <div class="checkbox">
+            <h2 class="labels" for="choices">
+              What would you rather be doing right now?
+              <br />(Check all that apply):
+            </h2>
+
+            <ul class="checkbox-ul">
+              <li class="checkbox-li">
+                <label class="checkbox-label">Watching Videos Online</label>
+                <input name="check" value="1" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Reading Online</label>
+                <input name="check" value="2" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Reading</label>
+                <input name="check" value="3" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Spending time offline with Family</label>
+                <input name="check" value="4" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Spending time offline with a book</label>
+                <input name="check" value="5" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Spending time offline with another ;)</label>
+                <input name="check" value="6" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Excercising</label>
+                <input name="check" type="checkbox" class="check-input" value="7" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Working on a project</label>
+                <input name="check" value="8" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Cooking</label>
+                <input name="check" value="9" type="checkbox" class="check-input" />
+              </li>
+              <li class="checkbox-li">
+                <label class="checkbox-label">Eating</label>
+                <input name="check" value="10" type="checkbox" class="check-input" />
+              </li>
+            </ul>
+          </div>
+          <div class="comments">
+            <h2 class="labels">Choose you own question and answer it 🤙🏽</h2>
+            <textarea
+              id="comments"
+              class="comments"
+              name="comment"
+              placeholder="  Enter your comment here..."
+            >
+            </textarea>
+          </div>
+          <div class="submit">
+            <button class="submit-btn" id="submit" type="submit">Submit</button>
+          </div>
         </form>
       </main>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

@@ -15,7 +15,9 @@
   --line: 1px solid var(--color-grey-light-2);
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,6 +25,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -108,13 +111,19 @@ ul {
 
 /* Radio Button
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  margin-top: 2rem;
-}
-
-li {
+.radio {
   width: 49%;
   display: inline-block;
+}
+.radio-ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.radio-li {
+  margin-bottom: 3rem;
 }
 
 .radio-label {
@@ -156,4 +165,70 @@ li {
 
 .radio-input:checked ~ .radio-label .custom_radio-button::after {
   opacity: 1;
+}
+
+/* Check Boxes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.checkbox-ul {
+  padding-right: 15rem;
+}
+
+.checkbox-li {
+  text-align: right;
+  padding: 1rem;
+}
+
+.checkbox-label {
+  margin-right: 4rem;
+}
+
+/* Textarea
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.comments {
+  height: 30vh;
+  width: 100%;
+}
+
+.submit {
+  margin-top: 8rem;
+}
+
+.submit-btn {
+  background-color: var(--color-primary);
+  font-size: 2rem;
+  height: 5rem;
+  width: 20rem;
+  color: var(--color-grey-light-2);
+  border-radius: 1rem;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.5rem solid var(--color-primary-dark);
+  box-shadow: 0.3rem 0.4rem 0 0 var(--color-grey-dark-2);
+}
+.submit-btn:hover {
+  background-color: var(--color-grey-light-2);
+  color: var(--color-primary-dark);
+  font-weight: bold;
+}
+
+.submit-btn:active {
+  position: relative;
+  top: 0.3rem;
+  left: 0.2rem;
+  box-shadow: 0 0;
 }
