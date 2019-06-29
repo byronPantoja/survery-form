@@ -7,5 +7,87 @@
     <title>Build a Survey Form - FCC Project</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body class="container"></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">
+          This Survey
+        </h1>
+        <p id="description">
+          Is a Survey About Taking Surveys
+        </p>
+      </header>
+      <main class="survey">
+        <form class="form" id="survey-form" method="GET" action="#">
+          <label for="email" class="labels" id="email-label">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-field"
+            placeholder="  Please enter your email"
+            required
+          />
+          <label for="name" class="labels" id="name-label">Your Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input-field"
+            placeholder="  Please enter your name"
+            required
+          />
+          <label for="age" class="labels" id="number-label">Your age: </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="input-field"
+            min="1"
+            ;
+            max="100"
+            placeholder="  Age"
+            required
+          />
+          <div>
+            <label for="gender" class="labels" id="gender-label">Your Gender: </label>
+            <select name="gender" id="dropdown">
+              <option disabled value>Select One</option>
+              <option value="intersex">Intersex</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <!-- Survey Questions -->
+          <div>
+            <h2 class="labels">Do you like taking Surveys?</h2>
+
+            <ul>
+              <li>
+                <input type="radio" name="yesno" class="radio-input" id="yes" checked />
+                <label for="yes" class="radio-label"
+                  >Yes
+                  <span class="custom_radio-button"></span>
+                </label>
+
+                <div class="check"></div>
+              </li>
+
+              <li>
+                <input type="radio" name="yesno" class="radio-input" id="no" />
+                <label for="no" class="radio-label"
+                  >No
+                  <span class="custom_radio-button"></span>
+                </label>
+
+                <div class="check"></div>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
